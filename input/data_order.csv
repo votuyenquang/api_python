@@ -1,0 +1,34 @@
+idUser,idProduct,product_name,reviewStar,category_id,category_name,categpry_detail_id,categpry_detail_name
+4189c340-2e33-11ec-82ac-5d50ecca5d67,2,"Patterned shirt",4,1,Shirt,4,Shirt
+4189c340-2e33-11ec-82ac-5d50ecca5d67,8,"SHORT SLEEVE SHIRT, COLLAR RIM, FITTED FORM",5,1,Shirt,4,Shirt
+4189c340-2e33-11ec-82ac-5d50ecca5d67,8,"SHORT SLEEVE SHIRT, COLLAR RIM, FITTED FORM",5,1,Shirt,4,Shirt
+227566c0-2d6c-11ec-9cf0-c9d95f18e810,4,"Glasses B80",NULL,4,Accessory,13,Glasses
+227566c0-2d6c-11ec-9cf0-c9d95f18e810,2,"Patterned shirt",NULL,1,Shirt,4,Shirt
+227566c0-2d6c-11ec-9cf0-c9d95f18e810,2,"Patterned shirt",NULL,1,Shirt,4,Shirt
+227566c0-2d6c-11ec-9cf0-c9d95f18e810,2,"Patterned shirt",NULL,1,Shirt,4,Shirt
+227566c0-2d6c-11ec-9cf0-c9d95f18e810,4,"Glasses B80",NULL,4,Accessory,13,Glasses
+4189c340-2e33-11ec-82ac-5d50ecca5d67,4,"Glasses B80",5,4,Accessory,13,Glasses
+4189c340-2e33-11ec-82ac-5d50ecca5d67,2,"Patterned shirt",5,1,Shirt,4,Shirt
+4189c340-2e33-11ec-82ac-5d50ecca5d67,9,"Double Zipper Racer Jacket S-Class leather jacket",NULL,1,Shirt,1,"Leather jacket"
+de0b6020-2e33-11ec-82ac-5d50ecca5d67,f7ba2883-62e0-467b-80d9-b4a0295b3fe8,"PRINTED TOTE BAG",NULL,4,Accessory,12,"Hand bag"
+de0b6020-2e33-11ec-82ac-5d50ecca5d67,8,"SHORT SLEEVE SHIRT, COLLAR RIM, FITTED FORM",NULL,1,Shirt,4,Shirt
+de0b6020-2e33-11ec-82ac-5d50ecca5d67,f7ba2883-62e0-467b-80d9-b4a0295b3fe8,"PRINTED TOTE BAG",NULL,4,Accessory,12,"Hand bag"
+e59d2100-4b36-11ec-957c-c545f1f73833,9,"Double Zipper Racer Jacket S-Class leather jacket",NULL,1,Shirt,1,"Leather jacket"
+227566c0-2d6c-11ec-9cf0-c9d95f18e810,6e26ec55-5b3e-4496-8d31-3fd561652c49,"JEAN JACKET. LOOSE FORM",NULL,1,Shirt,2,Jacket
+227566c0-2d6c-11ec-9cf0-c9d95f18e810,1,"Women's glasses K4",NULL,4,Accessory,13,Glasses
+4189c340-2e33-11ec-82ac-5d50ecca5d67,f7ba2883-62e0-467b-80d9-b4a0295b3fe8,"PRINTED TOTE BAG",NULL,4,Accessory,12,"Hand bag"
+4189c340-2e33-11ec-82ac-5d50ecca5d67,f7ba2883-62e0-467b-80d9-b4a0295b3fe8,"PRINTED TOTE BAG",4,4,Accessory,12,"Hand bag"
+NULL,6e26ec55-5b3e-4496-8d31-3fd561652c49,"JEAN JACKET. LOOSE FORM",NULL,1,Shirt,2,Jacket
+227566c0-2d6c-11ec-9cf0-c9d95f18e810,33bdac97-563a-4881-98d2-7802728ed78a,"Nike Air Force 1 All White",5,3,Shoe,9,Sneakers
+4189c340-2e33-11ec-82ac-5d50ecca5d67,33bdac97-563a-4881-98d2-7802728ed78a,"Nike Air Force 1 All White",5,3,Shoe,9,Sneakers
+e59d2100-4b36-11ec-957c-c545f1f73833,33bdac97-563a-4881-98d2-7802728ed78a,"Nike Air Force 1 All White",NULL,3,Shoe,9,Sneakers
+4189c340-2e33-11ec-82ac-5d50ecca5d67,fe553158-a79b-41fc-8448-4f5e9f84ccfc,"Nike Air Force 1 Low Gray",NULL,3,Shoe,9,Sneakers
+4189c340-2e33-11ec-82ac-5d50ecca5d67,33bdac97-563a-4881-98d2-7802728ed78a,"Nike Air Force 1 All White",NULL,3,Shoe,9,Sneakers
+4189c340-2e33-11ec-82ac-5d50ecca5d67,352d4885-af62-494e-9ae0-d714442a866a,"Korean style T-shirt",NULL,1,Shirt,2,Jacket
+4189c340-2e33-11ec-82ac-5d50ecca5d67,2,"Patterned shirt",NULL,1,Shirt,4,Shirt
+4189c340-2e33-11ec-82ac-5d50ecca5d67,7,"Black trousers",NULL,2,Pants,6,Trouser
+4189c340-2e33-11ec-82ac-5d50ecca5d67,60b5df78-9f41-4f20-839f-0ef9be6c1640,"MEN'S SHRYIT LONG-SLEEVE KOREAN STYLE JACKET",NULL,1,Shirt,2,Jacket
+4189c340-2e33-11ec-82ac-5d50ecca5d67,8,"SHORT SLEEVE SHIRT, COLLAR RIM, FITTED FORM",NULL,1,Shirt,4,Shirt
+4189c340-2e33-11ec-82ac-5d50ecca5d67,8,"SHORT SLEEVE SHIRT, COLLAR RIM, FITTED FORM",NULL,1,Shirt,4,Shirt
+4189c340-2e33-11ec-82ac-5d50ecca5d67,60b5df78-9f41-4f20-839f-0ef9be6c1640,"MEN'S SHRYIT LONG-SLEEVE KOREAN STYLE JACKET",NULL,1,Shirt,2,Jacket
+4189c340-2e33-11ec-82ac-5d50ecca5d67,fe553158-a79b-41fc-8448-4f5e9f84ccfc,"Nike Air Force 1 Low Gray",NULL,3,Shoe,9,Sneakers

@@ -1,0 +1,23 @@
+product_id,product_name,category_id,category_name,cateopry_detail_id,category_detail_name
+03001127-21d0-4afb-b691-9aa6c6616e9b,"Men's collared jacket",1,Shirt,2,Jacket
+2,"Patterned shirt",1,Shirt,4,Shirt
+3,"SHORT SLEEVE SHIRT  REGULAR FORM",1,Shirt,4,Shirt
+352d4885-af62-494e-9ae0-d714442a866a,"Korean style T-shirt",1,Shirt,2,Jacket
+3f963a89-cfb0-4ff1-a5cb-b5d2e959d02f,"Quilting Bomber Jacket",1,Shirt,2,Jacket
+6,"SHORT SLEEVE T-SHIRT, SLIM FORM",1,Shirt,5,"Wool t-shirt"
+60b5df78-9f41-4f20-839f-0ef9be6c1640,"MEN'S SHRYIT LONG-SLEEVE KOREAN STYLE JACKET",1,Shirt,2,Jacket
+6e26ec55-5b3e-4496-8d31-3fd561652c49,"JEAN JACKET. LOOSE FORM",1,Shirt,2,Jacket
+7196ab49-7a5e-4216-bd0c-bdc7e32e04e9,"Crown Men's Turn-down Collar Jacket",1,Shirt,2,Jacket
+8,"SHORT SLEEVE SHIRT, COLLAR RIM, FITTED FORM",1,Shirt,4,Shirt
+9,"Double Zipper Racer Jacket S-Class leather jacket",1,Shirt,1,"Leather jacket"
+b6d57d2e-ac7e-43bb-a532-1f3fc11f783f,"Men's Regular Polo Shirt Mixed Colors",1,Shirt,3,T-shirt
+c1bd4ef3-1c3c-4bf1-9eb0-8e6270089741,"SHORT SLEEVE MEN'S T-SHIRT JT2",1,Shirt,5,"Wool t-shirt"
+cdc2b53f-8968-4870-be1f-00deef9ec73d,"Long-Sleeved Evening Shirt",1,Shirt,4,Shirt
+7,"Black trousers",2,Pants,6,Trouser
+8e7f66a5-809c-4e72-87b0-48e21f2c4cac,"Ripped Jeans",2,Pants,7,Jean
+f1a04f36-7c33-467e-8778-4317db377a60,"STRAIGHT FORM SHORTS",2,Pants,82ea0c97-17f2-45ff-adf3-03c1e089e7ce,Short
+33bdac97-563a-4881-98d2-7802728ed78a,"Nike Air Force 1 All White",3,Shoe,9,Sneakers
+fe553158-a79b-41fc-8448-4f5e9f84ccfc,"Nike Air Force 1 Low Gray",3,Shoe,9,Sneakers
+1,"Women's glasses K4",4,Accessory,13,Glasses
+4,"Glasses B80",4,Accessory,13,Glasses
+f7ba2883-62e0-467b-80d9-b4a0295b3fe8,"PRINTED TOTE BAG",4,Accessory,12,"Hand bag"
