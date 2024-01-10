@@ -18,20 +18,12 @@ def hello():
     return jsonify(message="Hello, World!")
 
 
-# @app.route('/api/greet/<name>', methods=['GET'])
-# def greet(name):
-#     return jsonify(message=f"Hello, {name}!")
-
-
 @app.route('/api/recommendation', methods=['POST'])
 def sum_numbers():
     df = pd.read_csv("input/data_product_final.csv")
 
     # check the number of rows and columns
     df.shape
-    # dataset_loc = df[df['user_id'].str.contains(id_can_loc, na=False) ]
-    # print("Number datatset")
-    # print(dataset_loc)
 
     # Check for missing values
     def check_missing_values(dataframe):
@@ -57,9 +49,9 @@ def sum_numbers():
     # print(check_data_types(df))
 
     df['discounted_price'] = df['discounted_price'].astype(
-        str).str.replace('₹', '').str.replace(',', '').astype(float)
+        str).str.replace(',', '').astype(float)
     df['actual_price'] = df['actual_price'].astype(
-        str).str.replace('₹', '').str.replace(',', '').astype(float)
+        str).str.replace(',', '').astype(float)
     df['discount_percentage'] = df['discount_percentage'].astype(
         str).str.replace('%', '').astype(float)/100
 
@@ -74,7 +66,8 @@ def sum_numbers():
     # df['rating'] = df['rating'].astype(float)
     # df['rating_count'] = df['rating_count'].astype(float)
     df['rating'] = df['rating'].astype(str).str.replace(',', '').astype(float)
-    df['rating_count'] = df['rating_count'].astype(str).str.replace(',', '').astype(float)
+    df['rating_count'] = df['rating_count'].astype(
+        str).str.replace(',', '').astype(float)
 
     # Creating the column "rating_weighted"
     df['rating_weighted'] = df['rating'] * df['rating_count']
@@ -231,8 +224,7 @@ def sum_numbers():
     sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm')
     plt.title('Correlation Matrix')
     # plt.show()
-    
-    
+
     # label_encoders = {}
 
     # # Lặp qua các user_id duy nhất và tạo một LabelEncoder cho mỗi user_id
@@ -244,21 +236,19 @@ def sum_numbers():
     le = LabelEncoder()
     df['user_id_encoded'] = le.fit_transform(df['user_id'])
 
-    
     # Create a new dataframe with the user_id frequency table
     freq_table = pd.DataFrame({'User ID': df['user_id_encoded'].value_counts(
     ).index, 'Frequency': df['user_id_encoded'].value_counts().values})
- 
+
 
 # # Đặt lại tên cột
 #     value_counts.columns = ['user_id_encoded', 'Frequency']
 
 # # Hiển thị DataFrame mới
-#     print(value_counts) 
-   
+#     print(value_counts)
+
     # Chuyển đổi Series thành DataFrame
     # result_df = pd.DataFrame({'user_id': df['user_id'].unique(), 'user_id_encoded': le.transform(df['user_id'].unique())})
-
 
     # Hiển thị DataFrame mới
     # print(result_df)
@@ -272,7 +262,12 @@ def sum_numbers():
         # le = LabelEncoder()
         # df['user_id_encoded'] = le.fit_transform(df['user_id'])
         print("++++++++++++++++++++++++++++++++++++++++++++++++", new_user_id)
-        user_id_encoded = le.transform([new_user_id])[0]
+        # user_id_encoded = le.transform([new_user_id])[0]
+        try:
+            user_id_encoded = le.transform([new_user_id])[0]
+        except ValueError:
+            # Xử lý khi không thể chuyển đổi user_id
+            user_id_encoded = 0
         tfidf = TfidfVectorizer(stop_words='english')
         df['about_product'] = df['about_product'].fillna(
             '')  # fill NaN values with empty string
@@ -302,25 +297,25 @@ def sum_numbers():
                 similarity_scores, key=lambda x: x[1], reverse=True)
 
             # Get the indices of the top 5 most similar products
-            top_products = [i[0] for i in similarity_scores[1:8]]
+            top_products = [i[0] for i in similarity_scores[1:13]]
 
             # Get the names of the top 5 most similar products
             recommended_products = df.iloc[top_products]['product_name'].tolist(
             )
-               # Get the names of the top 5 most similar products
+            # Get the names of the top 5 most similar products
             recommended_products_id = df.iloc[top_products]['product_id'].tolist(
             )
 
             # Get the reasons for the recommendation
-            score = [similarity_scores[i][1] for i in range(7)]
+            score = [similarity_scores[i][1] for i in range(12)]
 
             # Create a DataFrame with the results
-            results_df = pd.DataFrame({'Id Encoded': [user_id_encoded] * 7,
+            results_df = pd.DataFrame({'Id Encoded': [user_id_encoded] * 12,
                                        'recommended product': recommended_products,
-                                       'id_product' : recommended_products_id,
+                                       'id_product': recommended_products_id,
                                        'score recommendation': score})
             print(results_df)
-            results_list =  list(set(recommended_products_id))
+            results_list = list(set(recommended_products_id))
             return results_list
 
         else:
@@ -331,7 +326,7 @@ def sum_numbers():
     # new_user_id = '227566c0-2d6c-11ec-9cf0-c9d95f18e810'
     req = request.get_json()
     new_user_id = req.get('idUser')
-    # if new_user_id == "1": 
+    # if new_user_id == "1":
     #     new_user_id = '227566c0-2d6c-11ec-9cf0-c9d95f18e810'
     # print("=====================", new_user_id)
     # le = label_encoders[new_user_id]
