@@ -259,9 +259,7 @@ def sum_numbers():
 
     def recommend_products(df, new_user_id):
         # Use TfidfVectorizer to transform the product descriptions into numerical feature vectors
-        # le = LabelEncoder()
         # df['user_id_encoded'] = le.fit_transform(df['user_id'])
-        print("++++++++++++++++++++++++++++++++++++++++++++++++", new_user_id)
         # user_id_encoded = le.transform([new_user_id])[0]
         try:
             user_id_encoded = le.transform([new_user_id])[0]
